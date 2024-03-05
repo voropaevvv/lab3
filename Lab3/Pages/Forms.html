@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Робота з формами - Лабораторне заняття №3 з HTML5">
+    <meta name="keywords" content="HTML5, форми, теги">
+    <title>Воропаєв Вадим Вячеславович - Робота з формами</title>
+</head>
+<body>
+    <!-- Заголовок сторінки -->
+    <h1>Робота з формами</h1>
+
+    <!-- Форма з вказаними полями вводу -->
+    <form action="/submit_form" method="post">
+        <!-- Поле для вводу ім'я -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Поле для вводу віку -->
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <!-- Поле для вводу пароля -->
+        <label for="password">Your Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Радіо-кнопки для вибору статі -->
+        <p>Male <input type="radio" id="male" name="gender" value="male"> 
+           Female <input type="radio" id="female" name="gender" value="female"></p>
+
+        <!-- Прапорець "Remember me" -->
+        <label for="remember">Remember me:</label>
+        <input type="checkbox" id="remember" name="remember">
+
+        <!-- Випадаючий список для вибору міста -->
+        <label for="city">Select your city:</label>
+        <select id="city" name="city">
+            <option value="Kyiv">Kyiv</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Odessa">Odessa</option>
+            <!-- Додайте інші міста за необхідністю -->
+        </select>
+
+        <!-- Поле для вводу повідомлення -->
+        <label for="message">Enter your message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Кнопка "Submit" для відправлення форми -->
+        <button type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
